@@ -66,3 +66,4 @@ fabs(pi - reference), max_elapsed);
 MPI_Finalize();
 return 0;
 }
+

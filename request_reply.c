@@ -8,7 +8,6 @@ int main(int argc, char **argv) {
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
 
-    // Validasi jumlah proses harus tepat 2
     if (size != 2) {
         if (rank == 0) {
             fprintf(stderr, "Use exactly 2 processes.\n");

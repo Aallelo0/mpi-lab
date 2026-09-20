@@ -15,7 +15,6 @@ MPI_COMM_WORLD, &requests[0]);
 MPI_Isend(&outgoing, 1, MPI_INT, right, 0,
 MPI_COMM_WORLD, &requests[1]);
 
-/* Independent work: neither buffer is accessed. */
 double work = 0.0;
 for (int i = 1; i <= 10000; ++i)
 work += 1.0 / (i + rank + 1.0);
